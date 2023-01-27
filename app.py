@@ -8,4 +8,24 @@ def paralell (list):
     return y
 
 
+
+
+def potential_divider(volt , list):
+    #return volt(list[1]/(list[0]+list[1]))
+    y = 0
+    for x in list:
+        y = y + x
+    
+    i = volt / y
+
+    for x in list:
+        z = x * i
+        print(z,"v") 
+
+
+
 paralell([332,1000,2200])
+
+
+
+potential_divider(9,[3000,1000])
