@@ -28,11 +28,11 @@ def temperature_check(temp,unit):
         temp = (temp - 32)*5/9
     
     if unit == "C" or unit == "c":
-        if temp <= 30:
+        if temp < 30:
             print("The patient is hypothermic")
-        elif temp >= 40:
+        elif temp > 40:
             print("the patient is hyperthermis")
-        elif temp > 30 and temp < 40:
+        elif temp >= 30 and temp <= 40:
             print("The patient is normal")
         else:
             print("Enter a usable number")
@@ -48,7 +48,7 @@ def temperature_check(temp,unit):
 
 
 paralell([332,1000,2200])
-
+print (" ")
 potential_divider(9,[3000,1000])
-
-temperature_check(15,"f")
+print(" ")
+temperature_check(30,"c")
